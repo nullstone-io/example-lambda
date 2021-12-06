@@ -3,7 +3,7 @@ FROM amazon/aws-lambda-ruby:2.7
 WORKDIR ${LAMBDA_TASK_ROOT}
 
 # Copy function code
-COPY main.rb .
+COPY app.rb .
 
 # Copy dependency management file
 COPY Gemfile .
